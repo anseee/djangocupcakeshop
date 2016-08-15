@@ -1,0 +1,63 @@
+{% extends 'menu/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <div class="container">
+        <h2 class="text-center">Order Cupcake</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="card">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-tag"></span>
+                            <strong>Chocolate Cupcake</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-tag"></span>
+                            <strong>3.00</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-tag"></span>
+                            <strong>John</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-tag"></span>
+                            <strong>15rd August, 2016</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Order
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Chocolate Cupcake</h4>
+                </div>
+                <div class="modal-body">
+                    Complete this website to get your Cupcake!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
