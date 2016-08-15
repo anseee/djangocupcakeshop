@@ -8,7 +8,6 @@ from django.db import migrations, models
 import django.db.models.deletion
 from django.utils.timezone import utc
 
-
 class Migration(migrations.Migration):
 
     initial = True
@@ -26,7 +25,7 @@ class Migration(migrations.Migration):
                 ('price', models.CharField(max_length=20)),
                 ('rating', models.FloatField()),
                 ('image', models.ImageField(upload_to='images/cakes')),
-                ('createdAt', models.DateTimeField(default=datetime.datetime(2016, 8, 15, 0, 54, 10, 662458, tzinfo=utc))),
+                ('createdAt', models.DateTimeField(default=django.utils.timezone.now)),
                 ('writer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
